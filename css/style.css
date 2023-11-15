@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "main" "footer";
+}
+
+
+
+
+
+/*ABOUT - kart */
+iframe{
+
+}
+
+@media only screen and (min-width: .. px){
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+
+
+
+    /*
+- Video i header skal synes (bevegelse, men IKKE lyd)
+- Hover effekt over knappene skal fungere 
+    * Skal gå fra gulBAKGRUNN med sort skrift til sort bakgrunn med gulSKRIFT
+- Bildene trekke opp på siden av hverandre (med 3 bilder i bredden)
+
+*/
+
+
+
+
+
+
+}
+
+
+
+
+/*KILDE:
+- Tekst over bilde og knapp som blir værende på siden ved scrolling 
+https://www.w3schools.com/css/css_positioning.asp
+*/
