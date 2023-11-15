@@ -18,7 +18,15 @@ iframe{
 
 }
 
-@media only screen and (min-width: .. px){
+footer {
+    background-color: #000;
+    color:#fff;
+}
+footer a {
+    color: #fff;
+}
+
+@media only screen and (min-width: 800px){
 
 #grid-container{
     display: grid;
