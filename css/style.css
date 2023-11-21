@@ -203,22 +203,30 @@ header div img {
     padding: 10px;
 }
 
-/*PRODUKT - artikkelkort*/
-.branding {
-    max-width: 692px;
-    flex-grow: inherit;
+/*PRODUKT*/
+
+.products-header {
+    position: absolute;
+    top: 50%;
+}
+.products-header h1{
+    display: flex;
+    font-weight: bold;
+    font-size: 11vw;
+    text-align: center;
+    margin: 0.5rem;
 }
 
-.design {
-    max-width: 692px;
-    flex-grow: inherit;
-
-
+/*artikkelkort*/
+#branding img {
+    width: 55%;
 }
-.development {
-    max-width: 692px;
-    flex-grow: inherit;
 
+#design img {
+  width: 55%;
+}
+#development img {
+    width: 55%;
 }
 
 /*SKjule video i header i mobil oppsett*/
@@ -292,6 +300,16 @@ footer div a {
     opacity: 50%;
     object-fit: cover;
     width: auto;
+}
+
+#branding img {
+    max-width: 692px;
+}
+#design img {
+    max-width: 692px;
+}
+#development img {
+    max-width: 692px;
 }
 
 
