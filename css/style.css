@@ -62,18 +62,21 @@ header div img {
 
 /*FORSIDEN*/
 .container { /*Kilde 12, beskrivelse i eksamensdokumentet*/
+    display: flex;
     position: relative;
     color: #000;
 }
 
 .centered { /*Kilde 12, beskrivelse i eksamensdokumentet*/
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 7vw;
     top: 5%;
+
 }
 
 .centered h1 {
-    font-weight: bold;
-    font-size: 11vw;
     text-align: center;
     margin: 0.5rem;
 }
@@ -124,18 +127,12 @@ header div img {
 
 }
 .company h4 {
-    display: flex;
-    align-self: flex-start;
     margin: 1rem 3rem 1rem 3rem;
 }
 .company p {
-    display: flex;
-    align-self: flex-start;
     margin: 0 3rem 1rem 3rem;
 }
 .btn4 {
-    display: flex;
-    align-self: flex-start;
     border: 2px solid #000;
     text-decoration: none;
     color: #000;
@@ -205,28 +202,87 @@ header div img {
 
 /*PRODUKT*/
 
-.products-header {
-    position: absolute;
-    top: 50%;
-}
-.products-header h1{
+.heading {
     display: flex;
-    font-weight: bold;
-    font-size: 11vw;
-    text-align: center;
-    margin: 0.5rem;
+    align-items: center;
+    position: absolute;
+    font-size: 7vw;
+    top: 40%;
+    left: 25%;
 }
+#jobs {
+    display: grid;
+}
+
+#jobs h3 {
+    font-size: 5.5vw;
+    margin: 1rem 0 0 3rem;
+}
+.hl { /*Kilde 16, beksrivelse i eksamensdokumentet*/
+    border: 1px solid #e6bd43;
+    width: 70%;
+    margin: 0.5rem 0 1rem 3rem;
+}
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+.button form button {
+    background-color: #fff;
+    border: 1px solid #252525;
+    font-size: 4vw;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
 
 /*artikkelkort*/
+#branding {
+    display: flex;
+    flex-direction: column;
+
+}
+#branding h3 {
+    font-size: 6vw;
+    margin: 1rem 0 1rem 3rem;
+}
 #branding img {
     width: 55%;
+    align-self: center;
+    margin-bottom: 1.5rem;
 }
 
+
+#design {
+    display: flex;
+    flex-direction: column;
+}
+#design h3 {
+    font-size: 6vw;
+    margin: 1rem 0 1rem 3rem;
+}
 #design img {
-  width: 55%;
+    width: 55%;
+    align-self: center;
+    margin-bottom: 1.5rem;
+}
+
+
+#development {
+    display: flex;
+    flex-direction: column;
+}
+#development h3 {
+    font-size: 6vw;
+    margin: 1rem 0 1rem 3rem;
 }
 #development img {
     width: 55%;
+    align-self: center;
+    margin-bottom: 1.5rem;
 }
 
 /*SKjule video i header i mobil oppsett*/
