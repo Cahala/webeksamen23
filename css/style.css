@@ -305,6 +305,7 @@ header div img {
     margin-top: 0;
 }
 
+
 #development {
     display: flex;
     flex-direction: column;
@@ -328,6 +329,7 @@ header div img {
     font-size: 5vw;
     margin-top: 0;
 }
+
 
 /*PRODUKT - skip to top knapp*/
 .btn2-2 { /*Kilde 13, beskrivelse i eksamensdokumentet*/
@@ -358,7 +360,7 @@ header div img {
     height: 900px;
     margin-top: 1rem;
 }
-.frame {
+.frame { /*Kilde 18, beskrivelse i eksamensdokumentet*/
     display: flex;
     position: absolute;
     top: 5%;
