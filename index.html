@@ -3,22 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--MÅ FYLLES INN--> <meta property="og:title" content="">
-    <!--MÅ FYLLES INN--> <meta property="og:url" content="">
-    <!--MÅ FYLLES INN--> <meta property="og:description" content="">
-    <!--MÅ FYLLES INN--> <meta property="og:image" content="">
+        <meta name="author" content="Ola Nordmann">
+        <meta name="description" content="will help you develop your company with exceptional design and digital marketing">
+        <meta name="keywords" content="marketing, design, develop, branding, support, products, portfolio, ux, SoME, social media, digital marketing, services">
+        <meta property="og:title" content="O.Nordmann - marketing and design">
+        <meta property="og:url" content="https://www.onordmann.no">
+        <meta property="og:description" content="We help you with marketing and design">
+        <meta property="og:image" content="https://pixabay.com/photos/despaired-businessman-business-2261021/">
+        <!--Kilde 19, beskrivelse i eksamens dokumentet-->
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/fontawesome/css/fontawesome.css">
         <link rel="stylesheet" href="css/fontawesome/css/brands.css">
         <link rel="stylesheet" href="css/fontawesome/css/solid.css">
 
-    <!--MÅ FYLLES INN--> <title>Document</title>
+        <title>O.Nordmann - marketing and design. Our services</title>
         <link rel="icon" href="css/ressurser/logo3.png" type="image/x-icon">
         <!--Kilde 1, beskrivelse i eksamensdokumentet-->
     </head>
     <body>
         <div id="grid-container">
             <header>
+                <a href="#company" class="skip" aria-label="content about our company">Skip to about our company</a>
+                <a href="#our-services" class="skip" aria-label="content for our services">Skip to about our services</a>
+                <a href="#sign-up" class="skip" aria-label="sign up for newsletter">Skip to sign up for newsletter</a>
+                <a href="#logo1" class="skip" aria-label="follow our company in sosial media">Skip to follow us in sosial media</a>
+                <!--Kilde 2, beskrivelse i eksamensdokumentet-->
                 <nav class="flex-container">
                     <a class="logo" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
                     <a class="active" href="index.html" aria-label="go to homesite">Home</a>
@@ -27,9 +36,9 @@
                     <a class="btn" href="about.html#contact" aria-label="navigation to contact us">Contact</a>
                     <!--Kilde 2, se beskrivelse i eksamensdokumentet-->
                 </nav>
-                <div class="container">
-                    <video autoplay muted loop id="myVideo">
-                        <source src="css/ressurser/mountains.mp4" type="video/mp4">
+                <div role="multimedia" aria-label="image for mobile and video for desktop" class="container">
+                    <video autoplay muted loop id="myVideo" aria-label="background video">
+                        <source src="css/ressurser/mountains.mp4" type="video/mp4" alt="video of paragliding in mountains">
                     <!--Kilde 10, beskrivelse i eksamensdokumnetet-->
                     </video>
                     <img src="css/business-2846221_1280.jpg" alt="laptop, iPhone, book with a pen">
@@ -54,7 +63,6 @@
                 </nav>
             </header>
             <main>
-
                 <article class="subheading">
                     <h2>Enganging subheading. What can you help your visitors with</h2>
                     <p>
@@ -65,7 +73,7 @@
                     </p>
                 </article>
 
-                <article class="company">
+                <article id="company">
                     <img src="css/400.svg" alt="picture with text 400 x 400">
                     <h4>About Our Company</h4>
                     <p>
@@ -79,45 +87,45 @@
                         <a href="about.html" class="btn4" aria-label="go to about us">Read more about us</a>
                     </nav>
                 </article>
-                <section class="our-services">
+                <section id="our-services">
                     <h2>Our Services</h2>
                     <article>
-  <!--MÅ FYLLES INN ARIA--> <p><i class="fa-solid fa-users" aria-label=""></i></p>
+                        <p role="icon" aria-label="people"><i class="fa-solid fa-users"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article>
-   <!--MÅ FYLLES INN ARIA--> <p><i class="fa-solid fa-cloud-arrow-up" aria-label=""></i></p>
+                        <p role="icon" aria-label="upload sky"><i class="fa-solid fa-cloud-arrow-up"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article>
-    <!--MÅ FYLLES INN ARIA--> <p><i class="fa-solid fa-code" aria-label=""></i></p>
+                        <p role="icon" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article>
-<!--MÅ FYLLES INN ARIA--> <p><i class="fa-solid fa-wifi" aria-label=""></i></p>
+                        <p role="icon" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>
+                    </article>  
                 </section>
                 <article id="sign-up">
                     <h2>Sign up for our newsletter</h2>
-                    <form>
+                    <form aria-label="sign up for newsletter">
                         <input type="email" name="email" placeholder="olanorman@hiof.no" id="email" required>
-                        <input class="submit" type="submit" value="Sign me up!">
+                        <input class="submit" type="submit" value="Sign me up!" aria-label="submit for newsletter">
                     </form>
                 </article>
             </main>
             <footer>
                 <a class="logo1" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
                 <p>Companyrights Companyname 2023</p>
-                <div>
+                <div id="logo1" role="links" aria-label="Company on social media">
                     <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"  aria-label="navigation to Faceboook"></i></a>
                     <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" aria-label="navigation to Instagram"></i></a>
                     <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"  aria-label="navigation to Linkedin"></i></a>
