@@ -20,8 +20,8 @@
         <link rel="icon" href="css/ressurser/logo3.png" type="image/x-icon">
         <!--Kilde 1, beskrivelse i eksamensdokumentet-->
     </head>
-    <body>
-        <div id="grid-container">
+    <body itemscope itemtype="https://schema.org/Organization">
+        <div id="grid-container" itemprop="brand">
             <header>
                 <a href="#frame" class="skip" aria-label="content about our company">Skip to content about our company</a>
                 <a href="#our-services" class="skip" aria-label="content for our services">Skip to our services</a>
@@ -38,11 +38,11 @@
                     <!--Kilde 2, se beskrivelse i eksamensdokumentet-->
                 </nav>
                 <div role="contentinfo" aria-label="information about company" class="company-name">
-                    <section id="frame">
+                    <section id="frame" itemprop="brand">
                         <article>
-                            <p>Company name</p>
+                            <p itemprop="description">Company name</p>
                             <h3>About Our Company</h3>
-                            <p>
+                            <p itemprop="description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -54,7 +54,6 @@
                                 <a href="#contact" aria-label="navigation to get in touch with us">Get in touch with us</a>
                                 <!--Kilde 2, beskrivelse i eksamensdokumentet-->
                             </nav>
-
                         </article>
                     </section>
                 </div>
@@ -65,45 +64,44 @@
                 </nav>
             </header>
             <main>
-                
-                <section id="our-services">
+                <section id="our-services" itemscope itemtype="http://schema.org/Service">
                     <h2>Our Services</h2>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="people"><i class="fa-solid fa-users"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
-                        <p role="img" aria-label="upload sky"><i class="fa-solid fa-cloud-arrow-up"></i></p>
+                    <article itemprop="hasOfferCatalog">
+                        <p role="img" aria-label="upload sky" itemprop="description"><i class="fa-solid fa-cloud-arrow-up"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </article>  
                 </section>
-                <section class="logos">
+                <section itemscope itemtype="https://schema.org/Service" itemtype="brand" class="logos">
                     <h2>Some of our clients</h2>
                     <img src="css/ressurser/logo1.png" alt="logo version 1">
                     <img src="css/ressurser/logo2.png" alt="logo version 2">
                     <img src="css/ressurser/logo3.png" alt="logo version 3">
                 </section>
 
-                <section id="contact">
+                <section id="contact" itemscope itemtype="https://schema.org/ContactPoint">
                     <h2>Contact us</h2>
                     <h5>Send us a message</h5>
-                    <form>
+                    <form itemprop="contactType">
                         <label for="name">Name
                             <input type="text" id="name" name="name" placeholder="Ola Normann.." required>
                         </label>
@@ -117,14 +115,14 @@
                         <!--Kilde 20, beskrivelse i eksamensdokumentet-->
                     </form>
                     <h5>Contact information</h5>
-                    <p>
+                    <p itemprop="description">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
                         praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
                         excepturi sint
                     </p>
-                    <p role="img" aria-label="pin for location"><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
-                    <p role="img" aria-label="phone"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
-                    <p role="img" aria-label="envelope"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
+                    <p itemprop="areaServed" role="img" aria-label="pin for location"><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
+                    <p itemprop="telephone" role="img" aria-label="phone"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
+                    <p itemprop="email" role="img" aria-label="envelope"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
                     <!--Kilde 3, beskrivelse i eksamensdokumentet-->
                     <!--Kilde 7, beskrivelse i eksamensdokumentet-->
                 </section>
@@ -135,7 +133,7 @@
             </main>
             <footer>
                 <a class="logo1" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
-                <p>Companyrights Companyname 2023</p>
+                <p itemprop="foundingDate">Companyrights Companyname 2023</p>
                 <div role="contentinfo" aria-label="Sosial media" id="logo1">
                     <a href="https://www.facebook.com/" aria-label="navigation to Facebook"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/" aria-label="navigation to Instagram"><i class="fa-brands fa-square-instagram"></i></a>

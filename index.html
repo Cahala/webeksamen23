@@ -20,8 +20,8 @@
         <link rel="icon" href="css/ressurser/logo3.png" type="image/x-icon">
         <!--Kilde 1, beskrivelse i eksamensdokumentet-->
     </head>
-    <body>
-        <div id="grid-container">
+    <body itemscope itemtype="https://schema.org/Organization">
+        <div id="grid-container" itemprop="brand">
             <header>
                 <a href="#company" class="skip" aria-label="content about our company">Skip to about our company</a>
                 <a href="#our-services" class="skip" aria-label="content for our services">Skip to about our services</a>
@@ -36,15 +36,20 @@
                     <a class="btn" href="about.html#contact" aria-label="navigation to contact us">Contact</a>
                     <!--Kilde 2, se beskrivelse i eksamensdokumentet-->
                 </nav>
-                <div role="banner" aria-label="image for mobile and video for desktop" class="container">
-                    <video autoplay muted loop id="myVideo" aria-label="background video">
+                <div role="banner" aria-label="image for mobile and video for desktop" class="container" itemscope itemtype="https://schema.org/VideoObject">
+                    <video itemprop="video" autoplay muted loop id="myVideo" aria-label="background video">
                         <source src="css/ressurser/mountains.mp4" type="video/mp4">
                     <!--Kilde 10, beskrivelse i eksamensdokumnetet-->
                     </video>
+                    <meta itemprop="thumbnailUrl" content="css/ressurser/mountains.mp4">
+                    <meta itemprop="name" content="mountains" />
+                    <meta itemprop="description" content="Two people in a parachute over a landscape">
+                    <meta itemprop="uploadDate" content="15.november 2023">
+                    <!--Kilde 20, beskrivelse i eksamensdokumentet-->
                     <img src="css/business-2846221_1280.jpg" alt="laptop, iPhone, book with a pen">
-                    <section class="centered">
+                    <section class="centered" itemscope itemtype="https://schema.org/Organization" itemprop="brand" >
                         <h1>Compeling headline</h1>
-                        <p>
+                        <p itemprop="description">
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
                             voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
                             occaecati cupiditate non provident.
@@ -65,18 +70,17 @@
             <main>
                 <article class="subheading">
                     <h2>Enganging subheading. What can you help your visitors with</h2>
-                    <p>
+                    <p itemprop="description">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
                         voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
                         occaecati cupiditate non provident.
                         <!--Kilde 4, beskrivelse i eksamensdokumentet-->
                     </p>
                 </article>
-
                 <article id="company">
                     <img src="css/400.svg" alt="picture with text 400 x 400">
                     <h4>About Our Company</h4>
-                    <p>
+                    <p itemprop="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
@@ -87,35 +91,35 @@
                         <a href="about.html" class="btn4" aria-label="go to about us">Read more about us</a>
                     </nav>
                 </article>
-                <section id="our-services">
+                <section id="our-services" itemscope itemtype="http://schema.org/Service">
                     <h2>Our Services</h2>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="people"><i class="fa-solid fa-users"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
-                        <p role="img" aria-label="upload sky"><i class="fa-solid fa-cloud-arrow-up"></i></p>
+                    <article itemprop="hasOfferCatalog">
+                        <p role="img" aria-label="upload sky" itemprop="description"><i class="fa-solid fa-cloud-arrow-up"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
-                    <article>
+                    <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
                         <h4>Branding</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>  
                 </section>
-                <article id="sign-up">
-                    <h2>Sign up for our newsletter</h2>
+                <article id="sign-up" itemscope itemtype="http://schema.org/SubscribeAction">
+                    <h2 itemprop="name">Sign up for our newsletter</h2>
                     <form aria-label="sign up for newsletter">
                         <input type="email" name="email" placeholder="olanorman@hiof.no" id="email" required>
                         <input class="submit" type="submit" value="Sign me up!" aria-label="submit for newsletter">
@@ -124,7 +128,7 @@
             </main>
             <footer>
                 <a class="logo1" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
-                <p>Companyrights Companyname 2023</p>
+                <p itemprop="foundingDate">Companyrights Companyname 2023</p>
                 <div role="contentinfo" aria-label="Sosial media" id="logo1">
                     <a href="https://www.facebook.com/" aria-label="navigation to Facebook"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/" aria-label="navigation to Instagram"><i class="fa-brands fa-square-instagram"></i></a>
