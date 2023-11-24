@@ -18,6 +18,24 @@ body {
     grid-template-rows: auto;
     grid-template-areas: "header" "main" "footer";
 }
+
+/*SKIP TO CONTENT FOR ALLE SIDENE*/
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
+
 .flex-container{
     display: grid;
     justify-content: center;
@@ -382,7 +400,7 @@ header div img {
 #frame article p {
     font-size: 5vw;
 }
-.btn5 a {
+.btn5 a {   
     text-decoration: none;
     border: none;
     background-color: #e6bd43;
