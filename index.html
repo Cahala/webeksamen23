@@ -28,14 +28,16 @@
                 <a href="#sign-up" class="skip" aria-label="sign up for newsletter">Skip to sign up for newsletter</a>
                 <a href="#logo1" class="skip" aria-label="follow our company in sosial media">Skip to follow us in sosial media</a>
                 <!--Kilde 2, beskrivelse i eksamensdokumentet-->
-                <nav class="flex-container">
+                <div class="flex-container">
                     <a class="logo" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
-                    <a class="active" href="index.html" aria-label="go to homesite">Home</a>
-                    <a href="products.html" aria-label="go to site for portfolio">Portfolio</a>
-                    <a href="about.html" aria-label="go to site for about us">About</a>
-                    <a class="btn" href="about.html#contact" aria-label="navigation to contact us">Contact</a>
-                    <!--Kilde 2, se beskrivelse i eksamensdokumentet-->
-                </nav>
+                    <nav class="meny">
+                        <a class="active" href="index.html" aria-label="go to homesite">Home</a>
+                        <a href="products.html" aria-label="go to site for portfolio">Portfolio</a>
+                        <a href="about.html" aria-label="go to site for about us">About</a>
+                        <a class="btn" href="about.html#contact" aria-label="navigation to contact us">Contact</a>
+                        <!--Kilde 2, se beskrivelse i eksamensdokumentet-->
+                    </nav>
+                </div>
                 <div class="container" role="banner" aria-label="image for mobile and video for desktop" itemscope itemtype="https://schema.org/VideoObject">
                     <video itemprop="video" autoplay muted loop id="myVideo" aria-label="background video">
                         <source src="css/ressurser/mountains.mp4" type="video/mp4">
@@ -52,11 +54,12 @@
                         <p itemprop="description">
                             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
                             voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
-                            occaecati cupiditate non provident.
+                            occaecati cupiditate non provident
                             <!--Kilde 4, beskrivelse i eksamensdokumentet-->
                         </p>
                         <nav class="btn3">
-                        <a href="#our-services" aria-label="go to our services">Read more about our services</a>
+                        <a href="#our-services" aria-label="go to our services">Read more about our 
+                            services</a>
                         <!--Kilde 2, beskrivelse i eksamensdokumentet-->
                         </nav>
                     </section>
@@ -73,22 +76,22 @@
                     <p itemprop="description">
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
                         voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint 
-                        occaecati cupiditate non provident.
+                        occaecati cupiditate non provident
                         <!--Kilde 4, beskrivelse i eksamensdokumentet-->
                     </p>
                 </article>
                 <article id="company">
                     <img src="css/400.svg" alt="picture with text 400 x 400">
-                    <h4>About Our Company</h4>
+                    <h3>About Our Company</h3>
                     <p itemprop="description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
                         <!--Kilde 4, beskrivelse i eksamensdokumentet-->
                     </p>
                     <nav>
-                        <a href="about.html" class="btn4" aria-label="go to about us">Read more about us</a>
+                        <a class="btn4" href="about.html" aria-label="go to about us">Read more about us</a>
                     </nav>
                 </article>
                 <section id="our-services" itemscope itemtype="http://schema.org/Service">
@@ -96,32 +99,32 @@
                     <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="people"><i class="fa-solid fa-users"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h4>Branding</h4>
+                        <h3>Branding</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="upload sky" itemprop="description"><i class="fa-solid fa-cloud-arrow-up"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h4>Branding</h4>
+                        <h3>Branding</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h4>Branding</h4>
+                        <h3>Branding</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>
                     <article itemprop="hasOfferCatalog">
                         <p role="img" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
                         <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h4>Branding</h4>
+                        <h3>Branding</h3>
                         <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                     </article>  
                 </section>
                 <article id="sign-up" itemscope itemtype="http://schema.org/SubscribeAction">
                     <h2 itemprop="name">Sign up for our newsletter</h2>
                     <form aria-label="sign up for newsletter">
-                        <input type="email" name="email" placeholder="olanorman@hiof.no" id="email" required>
+                        <input id="email" type="email" name="email" placeholder="olanorman@hiof.no"  required>
                         <input class="submit" type="submit" value="Sign me up!" aria-label="submit for newsletter">
                     </form>
                 </article>
@@ -129,7 +132,7 @@
             <footer>
                 <a class="logo1" href="index.html" aria-label="go to homesite"><img src="css/ressurser/logo1.png" alt="logo version 1"></a>
                 <p itemprop="foundingDate">Companyrights Companyname 2023</p>
-                <div role="contentinfo" aria-label="Sosial media" id="logo1">
+                <div id="logo1" role="contentinfo" aria-label="Sosial media" >
                     <a href="https://www.facebook.com/" aria-label="navigation to Facebook"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.instagram.com/" aria-label="navigation to Instagram"><i class="fa-brands fa-square-instagram"></i></a>
                     <a href="https://www.linkedin.com/" aria-label="navigation to Linkedin"><i class="fa-brands fa-linkedin"></i></a>

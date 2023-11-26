@@ -7,6 +7,7 @@ body {
     font-family: 'Roboto', 'Lato', sans-serif;
     /*Kilde 9, se beskrivelse i eksamensdokumentet*/
     margin: 0;
+
 }
 
 #grid-container{
@@ -18,6 +19,12 @@ body {
 
 header{ 
     grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
 }
 
 
@@ -36,107 +43,105 @@ header{
     height: auto;
 }
 
-main {
-    grid-area: main;
-}
-
-
+/*HEADER NAV FOR ALLE SIDENE*/
 .flex-container{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding-top: 1rem;
+}
+.flex-container img {
+    width: 30%;
 }
 
-.flex-container a{
+.meny {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.meny a {
     text-decoration: none;
     color: #000;
-    margin: 0.5rem;
-
+    margin-bottom: 0.5rem;
 }
-.logo {
-    margin-top: 0.5rem;
-    position: relative;
+header div img {
+    width: 100%;
 }
-
-/*CONTACT i nav*/
 .btn {
     background-color: #e6bd43;
-    padding: 0.25rem;
+    padding: 0.5rem;
     font-weight: bold;
+    margin-left: 9rem;
+    margin-right: 9rem;
 }
-
-/*HEADER - endring av utseende for å vise hvilken siden en er på*/
-.flex-container a.active { /*Kilde 11, beksrivelse i eksamensdokumentet*/
+.meny a.active { /*Kilde 11, beksrivelse i eksamensdokumentet*/
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: #e6bd43;
 }
 
+/*OVERSKRIFTBILDE FOR INDEX OG PRODUCT */
 header div img {
-    display: grid;
     width: 100%;
-    height: 20rem;
-    margin-top: 0.25rem;
     opacity: 50%;
 }
-
-/*FORSIDEN*/
 .container { /*Kilde 12, beskrivelse i eksamensdokumentet*/
-    display: flex;
     position: relative;
     color: #000;
 }
 .container img {
-    object-fit: cover;
-
+    height: 450px;
+    margin-top: 0.5rem;
+}
+/*SKjuler video i header i mobil oppsett*/
+#myVideo {
+    display: none;
 }
 
+/*FORSIDEN*/
 .centered { /*Kilde 12, beskrivelse i eksamensdokumentet*/
+    display: grid;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    font-size: 7vw;
-    top: 5%;
-
+    top: 2%;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
-
 .centered h1 {
     text-align: center;
-    margin: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 0;
 }
 .centered p {
-    font-size: 5vw;
     text-align: center;
-    margin: 0 2rem 0.5rem 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
-.centered a {
-    text-decoration: none;
-    margin-left: 1rem;
-    font-size: 3vw;
+.btn3 {
+    background-color: #e6bd43;
+    padding: 1rem 4rem 1rem 1rem;
 }
-
 .btn3 a{
     text-decoration: none;
-    background-color: #e6bd43;
     color: #000;
-    display: inline-block;
-    padding: 1rem;
     font-weight: bold;
     font-size: 4vw;
 }
 
+
 .subheading {
     text-align: center;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 
 }
 .subheading h2 {
-    margin: 2rem 2rem 0 2rem;
+    margin: 3rem 0 2rem 0;
     font-size: 6vw;
 }
 .subheading p {
-    margin: 2rem;
-    font-size: 5vw;
+    margin: 2rem 0 3.5rem 0;
 }
 
 
@@ -144,265 +149,215 @@ header div img {
     display: flex;
     flex-direction: column;
     background-color: #e6bd43;
-    font-size: 4vw;
-}
-#company img {
-    flex-direction: row;
-    width: 70%;
-    margin-top: 1rem;
-    align-self: center;
+    padding-bottom: 5rem;
 
 }
-#company h4 {
-    margin: 1rem 3rem 0.5rem 3rem;
+#company img {
+    align-self: center;
+    width: 70%;
+    margin-top: 2rem;
+}
+#company h3 {
+    font-size: 5vw;
+    margin: 3.5rem 7rem 0.5rem 6rem;
 }
 #company p {
-    margin: 0 3rem 1rem 3rem;
+    margin: 0.5rem 7rem 0.5rem 6rem;
+    font-size: 4.5vw;
 }
 #company nav {
     display: flex;
+    margin: 0.5rem 7rem 0.5rem 6rem;
 }
 .btn4 {
-    border: 2px solid #000;
+    flex-wrap: wrap;
+    border: 3px solid #000;
     text-decoration: none;
     color: #000;
-    margin: 0 0 2rem 3rem;
-    padding: 0.5rem;
-    font-size: 4vw;
+    padding: 1rem 1.5rem 1rem 0.5rem;
+    font-size: 4.5vw;
     font-weight: bold;
 }
 
-#our-services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 4vw;
-    margin-top: 1.5rem;
-}
-#our-services article {
 
-    margin: 0;
+#our-services {
+   margin-left: 3.5rem;
+   margin-right: 3.5rem;
 }
 #our-services h2 {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-#our-services article h4 {
-    margin: 0;
+    margin: 3rem 0 1.5rem 0;
     text-align: center;
 }
 #our-services article p i {
-    font-size: 7vw;
+    margin-top: 2.5rem;
+    font-size: 8vw;
+}
+#our-services article h3 {
+    text-align: center;
 }
 #our-services p {
     text-align: center;
-    margin:  1rem 3rem 1.5rem 3rem;
 }
+
 
 #sign-up{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     background-color: lightgray;
-
+    margin-top: 4rem;
 }
 #sign-up h2 {
     text-align: center;
-    font-size: 5vw;
-
+    margin-top: 4rem;
+    font-size: 6vw;
 }
 #sign-up form {
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
-.email{
-    font-size: 3vw;
-    padding: 10px;
-
+#email{
+    margin-left: 1.5rem;
+    padding: 17px 45px 17px 17px;
+    border: none;
 }
 .submit { /*Kilde 15, beskrivelse i eksamensdokumentet*/
     background-color: #e6bd43;
     font-weight: bold;
-    border-style: ridge;
     border: none;
-    padding: 10px;
+    padding: 17px;
 }
+
+
 
 /*PRODUKT*/
 .heading {
-    display: flex;
-    align-items: center;
     position: absolute;
     font-size: 7vw;
-    top: 40%;
-    left: 25%;
+    top: 38%;
+    left: 27%;
 }
 
-/*PRODUKT - Expolore previous jobs*/
+/*PRODUKT - Explore previous jobs*/
 #jobs {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+
 }
 #jobs h2 {
     font-size: 6vw;
-    margin-left: 3rem;
-    left: 60px;
-    top: 12%;
 }
+
+/*Gule streker på hele siden*/
 .hl { /*Kilde 16, beksrivelse i eksamensdokumentet*/
     border: 2px solid #e6bd43;
-    width: 70%;
-    margin-left: 3rem;
-
 }
+
+
+/*Skip to content knappene*/
 .button {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    left: 60px;
-    top: 40px;
+    margin-top: 2rem;
 }
-
-.design {
-    flex-grow: 2,
-}
-
 .button a {
-    background-color: #fff;
-    border: 1.5px solid #000;
-    color: #000;
-    font-size: 4vw;
     text-decoration: none;
-    padding: 0.25rem;
-    text-align: left;
-    flex-basis: calc(50% - 15px);
+    color: #000;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #000;
+}
+.design {
+    margin-right: 3rem;
+    margin-left: 1.5rem;
+}
+.development {
+    margin-top: 1.5rem;
 }
 
 
 /*PRDODUKT - artikkelkort*/
 #branding {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
 #branding h3 {
     font-size: 6vw;
-    margin-left: 3rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.75rem;
 }
 #branding img {
-    width: 70%;
-    height: auto;
-    align-self: center;
-    margin: 1.5rem 0 1rem 0;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 #branding p {
-    position: relative;
-    left: 60px;
     font-weight: bold;
-    font-size: 5vw;
-    margin-top: 0;
+    font-size: 4.5vw;
+    margin-top: 1.5rem;
 }
 
 
 #design {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
 #design h3 {
     font-size: 6vw;
-    margin-left: 3rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.75rem;
 }
 #design img {
-    width: 70%;
-    height: auto;
-    align-self: center;
-    margin: 1.5rem 0 1rem 0;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 #design p {
-    position: relative;
-    left: 60px;
     font-weight: bold;
-    font-size: 5vw;
-    margin-top: 0;
+    font-size: 4.5vw;
+    margin-top: 1.5rem;
 }
 
 
 #development {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
 #development h3 {
     font-size: 6vw;
-    margin-left: 3rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1.75rem;
 }
 #development img {
-    width: 70%;
-    height: auto;
-    align-self: center;
-    margin: 1.5rem 0 1rem 0;
+    width: 100%;
+    margin-top: 2.5rem;
 }
 #development p {
-    position: relative;
-    left: 60px;
     font-weight: bold;
-    font-size: 5vw;
-    margin-top: 0;
+    font-size: 4.5vw;
+    margin-top: 1.5rem;
 }
 
-
-/*PRODUKT - skip to top knapp*/
-.btn2-2 { /*Kilde 13, beskrivelse i eksamensdokumentet*/
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 0 5rem 0.75rem 0;
-    width: auto;
-    background-color: #252525;
-    color: #fff;
-    border-radius: 5%;
-    padding: 12px 12px;
-} 
-
-/*SKjule video i header i mobil oppsett*/
-#myVideo {
-    display: none;
-}
 /*ABOUT*/
 .company-name {  /*Kilde 6 og 17, beskrivelse i eksamensdokumentet*/
-    overflow: hidden;
     position: relative;
     background-image: url('business-2846221_1280.jpg');
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    margin-top: 1rem;
+    height: 900px;
+    margin-top: 0.5rem;
 }
 #frame { /*Kilde 18, beskrivelse i eksamensdokumentet*/
     display: flex;
-    position: absolute;
     top: 5%;
-    right: 10%;
-    left: 10%;
+    bottom: 10%;
+    position: absolute;
+    opacity: 85%;
     background-color: lightgrey;
-    opacity: 90%;
-    padding-left: 47px;
-    padding-right: 47px;
-    padding-bottom: 47px;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
-#frame article {
-    color: #000;
-    margin-top: 1rem;
-}
-#frame article h3 {
+#frame article h1 {
     font-size: 6vw;
 }
 #frame article p {
@@ -410,25 +365,24 @@ header div img {
 }
 .btn5 a {   
     text-decoration: none;
-    border: none;
     background-color: #e6bd43;
     color: #000;
     display: inline-block;
     padding: 1rem;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 4.5vw;
 }
+
 
 /*ABOUT - SECTION LOGOS*/
 .logos {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
     justify-content: space-around;
     background-color: #e6bd43;
     padding-bottom: 2rem;
     padding-top: 3rem;
+    margin-top: 3.5rem;
 }
 .logos h2 {
     font-size: 7vw;
@@ -450,19 +404,18 @@ header div img {
     font-size: 5vw;
     text-align: center;
 }
-#contact h5 {
+#contact h3 {
     margin-left: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
 }
 #contact form {
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 #contact form label{
     display: flex;
     flex-direction: column;
-    font-size: 4vw;
-    padding: 10px;
-    width: 90%;
+    padding: 10px;  
 }
 #contact form label input {
     border: none;
@@ -471,92 +424,62 @@ header div img {
 }
 .text-window {
     height: 7rem;
+    border: none;
 }
 .btn6 {
     border: none;
     background-color: #e6bd43;
     color: #000;
-    font-size: 3.5vw;
     font-weight: bold;
-    margin-left: 0.5rem;
+    margin-left: 0.77rem;
     margin-bottom: 2rem;
     padding: 1rem;
 }
 #contact p {
-    font-size: 4vw;
     margin-left: 1.5rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     margin-bottom: 0;
-
 }
 #contact p i {
-    margin-right: 1rem;
-    font-size: 20px;
-    color: #252525;
+    margin-right: 1.5rem;
 }
-
-/*ABOUT - skip to top knapp*/
-.btn2-3 { /*Kilde 13, beskrivelse i eksamensdokumentet*/
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: 0 3.5rem 0.75rem 0;
-    width: auto;
-    background-color: #252525;
-    color: #fff;
-    border-radius: 5%;
-    padding: 12px 12px;
-} 
-
 
 /*ABOUT - kart */
 #map {
+    display: flex;
     overflow: hidden;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: 0;
-
 }
 
+/*FOOTER - for alle sidene*/
 footer {
-    grid-area: footer;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: #252525;
     color:#fff;
-    width: 100%;
-    font-size: 5vw;
+    padding-top: 2rem;
     padding-bottom: 1.5rem;
 }
-.logo1 img {
-    margin-top: 2rem;
-}
+
 
 footer div a {
     color: #fff;
-    text-decoration: none;
     font-size: 7vw;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
-/*SKIP TO TOP*/
+/*SKIP TO TOP - for alle sidene*/
 .btn2 { /*Kilde 13, beskrivelse i eksamensdokumentet*/
     position: fixed;
     right: 0;
     bottom: 0;
-    margin: 0 3.5rem 0.75rem 0;
-    width: auto;
+    margin: 0 2.5rem 1.5rem 0;
     background-color: #252525;
     color: #fff;
     border-radius: 5%;
-    padding: 12px 12px;
+    padding: 13px 13px;
 }  
-
 
 
 @media only screen and (min-width: 600px) and (max-width:1600px){
@@ -568,37 +491,113 @@ footer div a {
     grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
+.flex-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin: 0;
+}
+.logo img {
+    width: 70%;
+    margin-bottom: 1rem;
+}
+.meny {
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0.5rem;
+}  
+.meny a {
+    margin-left: 1rem;
+    margin-right: 0.25rem;
+}
 .btn:hover {
     background-color: #000;
     color: #e6bd43;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: flex-start;
+
+.centered {
+    justify-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
-.flex-container a{
-    float: right;
+.centered h1 {
+    font-size: 3.5vw;
+}
+.centered p {
+    font-size: 1.5vw;
 }
 
-.logo img {
-    align-self: flex-start;
+.btn3 {
+    position: relative;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-self: center;
 }
+.btn3 a {
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+.btn3:hover {
+    background-color: #000;
+    color:#e6bd43;
+}
+
 
 /* FORSIDE HEADER - bile og video*/
 #myVideo {
     display: grid;
     opacity: 50%;
-    object-fit: cover;
+    object-fit: none;
     width: 100%;
     height: 400px;
+    margin-bottom: 5rem;
 }
-
 .index {
 display: none;
 }
 
-.btn3 a:hover {
+.subheading {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.subheading h2{
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    font-size: 3.75vw;
+}
+.subheading p {
+    font-size: 1.5vw;
+}
+
+
+#company {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#company img {
+
+}
+#company h3{
+    font-size: 1vw;
+
+}
+#company p {
+    font-size: 1vw;
+}
+
+
+
+.btn4:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+
+.submit:hover {
     background-color: #000;
     color: #e6bd43;
 }
@@ -611,10 +610,20 @@ display: none;
 .button {
     flex-direction: row;
 }
-.button a:hover{
+.button:hover{
     background-color: #000;
     color: #e6bd43;
 }
+
+
+#sign-up {
+    align-items: center;
+}
+#sign-up h2 {
+    font-size: 3vw;
+}
+
+
 
 /*PRODUCT - ARTIKKELKORTENE*/
 #branding img {
@@ -626,6 +635,20 @@ display: none;
 #development img {
     max-width: 692px;
 }
+#branding img:hover { /*Kilde 23, beskrivelse i eksamensdokumentet*/
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+#design img:hover { /*Kilde 23, beskrivelse i eksamensdokumentet*/
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+#development img:hover { /*Kilde 23, beskrivelse i eksamensdokumentet*/
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+
+
 
 
 /*ABOUT*/
@@ -635,6 +658,10 @@ display: none;
 }
 
 .btn5 a:hover {
+    background-color: #000;
+    color: #e6bd43;
+}
+.btn6:hover {
     background-color: #000;
     color: #e6bd43;
 }
@@ -663,14 +690,21 @@ display: none;
 
 
 
-
+/*FOOTER - for alle sidene*/
+footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer img {
+    margin-left: 1rem;
+    width: 70%;
+}
+footer p {
+    text-align: center;
+}
+#logo1 a {
+    font-size: 2vw;
 }
 
-
-
-
-
-
-/*    table tr:hover {
-        background-color:rgb(23, 123, 23);
-        /*KILDE: brukt https://www.w3schools.com/css/css_table_style.asp*/
+}
