@@ -68,65 +68,81 @@
             <main>
                 <section id="our-services" itemscope itemtype="http://schema.org/Service">
                     <h2>Our Services</h2>
-                    <article itemprop="hasOfferCatalog">
-                        <p role="img" aria-label="people"><i class="fa-solid fa-users"></i></p>
-                        <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h3>Branding</h3>
-                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>
-                    <article itemprop="hasOfferCatalog">
-                        <p role="img" aria-label="upload sky" itemprop="description"><i class="fa-solid fa-cloud-arrow-up"></i></p>
-                        <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h3>Branding</h3>
-                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>
-                    <article itemprop="hasOfferCatalog">
-                        <p role="img" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
-                        <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h3>Branding</h3>
-                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>
-                    <article itemprop="hasOfferCatalog">
-                        <p role="img" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
-                        <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
-                        <h3>Branding</h3>
-                        <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                    </article>  
+                    <div>
+                        <article itemprop="hasOfferCatalog">
+                            <p role="img" aria-label="people"><i class="fa-solid fa-users"></i></p>
+                            <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
+                            <h3>Branding</h3>
+                            <p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit</p>
+                            <!--Kilde 24, beskrivelse i eksamensdokumentet-->
+                        </article>
+                        <article itemprop="hasOfferCatalog">
+                            <p role="img" aria-label="upload sky" itemprop="description"><i class="fa-solid fa-cloud-arrow-up"></i></p>
+                            <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
+                            <h3>Branding</h3>
+                            <p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit</p>
+                            <!--Kilde 24, beskrivelse i eksamensdokumentet-->
+                        </article>
+                        <article itemprop="hasOfferCatalog">
+                            <p role="img" aria-label="sign for coding"><i class="fa-solid fa-code"></i></p>
+                            <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
+                            <h3>Branding</h3>
+                            <p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit</p>
+                            <!--Kilde 24, beskrivelse i eksamensdokumentet-->
+                        </article>
+                        <article itemprop="hasOfferCatalog">
+                            <p role="img" aria-label="wifi"><i class="fa-solid fa-wifi"></i></p>
+                            <!--Kilde 3, beskrivelse i eksamenesdokumentet-->
+                            <h3>Branding</h3>
+                            <p itemprop="description">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit</p>
+                            <!--Kilde 24, beskrivelse i eksamensdokumentet-->
+                        </article>
+                    </div>
                 </section>
                 <section  class="logos" itemscope itemtype="https://schema.org/Service">
                     <h2>Some of our clients</h2>
-                    <img src="css/ressurser/logo1.png" alt="logo version 1">
-                    <img src="css/ressurser/logo2.png" alt="logo version 2">
-                    <img src="css/ressurser/logo3.png" alt="logo version 3">
+                    <div>
+                        <img src="css/ressurser/logo1.png" alt="logo version 1">
+                        <img src="css/ressurser/logo2.png" alt="logo version 2">
+                        <img src="css/ressurser/logo3.png" alt="logo version 3">
+                    </div>
                 </section>
 
                 <section id="contact" itemscope itemtype="https://schema.org/ContactPoint">
                     <h2>Contact us</h2>
-                    <h3>Send us a message</h3>
-                    <form itemprop="contactType">
-                        <label for="name">Name
-                            <input type="text" id="name" name="name" placeholder="Ola Normann.." required>
-                        </label>
-                        <label for="subject">Subject
-                            <input type="text" id="subject" name="subject" placeholder="Branding.." required>
-                        </label>
-                        <label for="message">Message
-                            <textarea class="text-window" id="message" name="message" required></textarea>
-                        </label>
-                        <input class="btn6" type="submit" value="Send message">
-                        <!--Kilde 20, beskrivelse i eksamensdokumentet-->
-                    </form>
-                    <h3>Contact information</h3>
-                    <p itemprop="description">
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-                        praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
-                        excepturi sint
-                    </p>
-                    <p itemprop="areaServed" role="img" aria-label="pin for location"><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
-                    <p itemprop="telephone" role="img" aria-label="phone"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
-                    <p itemprop="email" role="img" aria-label="envelope"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
-                    <!--Kilde 3, beskrivelse i eksamensdokumentet-->
-                    <!--Kilde 7, beskrivelse i eksamensdokumentet-->
+                    <div class="message">
+                        <h3>Send us a message</h3>
+                        <form itemprop="contactType">
+                            <label for="name">Name
+                                <input type="text" id="name" name="name" placeholder="Ola Normann.." required>
+                            </label>
+                            <label for="subject">Subject
+                                <input type="text" id="subject" name="subject" placeholder="Branding.." required>
+                            </label>
+                            <label for="message">Message
+                                <textarea class="text-window" id="message" name="message" required></textarea>
+                            </label>
+                            <input class="btn6" type="submit" value="Send message">
+                            <!--Kilde 20, beskrivelse i eksamensdokumentet-->
+                        </form>
+                    </div>
+                    <div class="information">
+                        <h3>Contact information</h3>
+                        <p itemprop="description">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                            praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                            excepturi sint
+                        </p>
+                        <p itemprop="areaServed" role="img" aria-label="pin for location"><i class="fa-solid fa-location-pin"></i>B R A Veien 4, 1757 Halden</p>
+                        <p itemprop="telephone" role="img" aria-label="phone"><i class="fa-solid fa-phone"></i>69 60 80 00</p>
+                        <p itemprop="email" role="img" aria-label="envelope"><i class="fa-solid fa-envelope"></i><a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a></p>
+                        <!--Kilde 3, beskrivelse i eksamensdokumentet-->
+                        <!--Kilde 7, beskrivelse i eksamensdokumentet-->
+                    </div>
                 </section>
 
                 <section id="map">
