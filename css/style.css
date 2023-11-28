@@ -5,9 +5,8 @@
 
 body {
     font-family: 'Roboto', 'Lato', sans-serif;
-    /*Kilde 9, se beskrivelse i eksamensdokumentet*/
     margin: 0;
-
+    /*Kilde 9, se beskrivelse i eksamensdokumentet*/
 }
 
 #grid-container{
@@ -36,6 +35,7 @@ footer{
     width: 1px;
     height: 1px;
     overflow: hidden;
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
 .skip:focus{
     position: static;
@@ -76,17 +76,19 @@ header div img {
     margin-left: 9rem;
     margin-right: 9rem;
 }
-.meny a.active { /*Kilde 11, beksrivelse i eksamensdokumentet*/
+.meny a.active { 
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: #e6bd43;
+    /*Kilde 11, beskrivelse i eksamensdokumentet*/
 }
 
 /*OVERSKRIFTBILDE FOR INDEX OG PRODUCT */
 
-.container { /*Kilde 12, beskrivelse i eksamensdokumentet*/
+.container { 
     position: relative;
     color: #000;
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
 .container img {
     height: 400px;
@@ -100,12 +102,13 @@ header div img {
 }
 
 /*FORSIDEN*/
-.centered { /*Kilde 12, beskrivelse i eksamensdokumentet*/
+.centered { 
     display: grid;
     position: absolute;
     top: 2%;
     margin-left: 4rem;
     margin-right: 4rem;
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
 .centered h1 {
     text-align: center;
@@ -183,18 +186,24 @@ header div img {
     font-weight: bold;
 }
 
-
 #our-services {
-   margin-left: 3.5rem;
-   margin-right: 3.5rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
+
 #our-services h2 {
     margin: 3rem 0 1.5rem 0;
     text-align: center;
 }
+#our-services article {
+    max-width: 283px;
+    min-width: 250px;
+    width: 100%;
+}
 #our-services article p i {
     margin-top: 2.5rem;
     font-size: 8vw;
+    text-align: center;
 }
 #our-services article h3 {
     text-align: center;
@@ -223,11 +232,12 @@ header div img {
     padding: 17px 45px 17px 17px;
     border: none;
 }
-.submit { /*Kilde 15, beskrivelse i eksamensdokumentet*/
+.submit { 
     background-color: #e6bd43;
     font-weight: bold;
     border: none;
     padding: 17px;
+    /*Kilde 15, beskrivelse i eksamensdokumentet*/
 }
 
 
@@ -238,10 +248,12 @@ header div img {
     font-size: 7vw;
     top: 50%;
     left: 27%;
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
 .company-name-product {
     position: relative;
     color: #000;
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
 .company-name-product img {
     height: 400px;
@@ -262,8 +274,9 @@ header div img {
 }
 
 /*Gule streker på hele siden*/
-.hl { /*Kilde 16, beksrivelse i eksamensdokumentet*/
+.hl { 
     border: 2px solid #e6bd43;
+    /*Kilde 16, beksrivelse i eksamensdokumentet*/
 }
 
 
@@ -343,14 +356,16 @@ header div img {
 
 /*ABOUT*/
 
-.company-name {  /*Kilde 6 og 17, beskrivelse i eksamensdokumentet*/
+.company-name {  
     position: relative;
     background-image: url('business-2846221_1280.jpg');
     background-repeat: no-repeat;
     height: 900px;
-
+    /*Kilde 6,  beskrivelse i eksamensdokumentet */
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
+    /*Kilde 17, beskrivelse i eksamensdokumentet*/
 }
-    #frame { /*Kilde 18, beskrivelse i eksamensdokumentet*/
+    #frame { 
         display: flex;
         top: 5%;
         bottom: 10%;
@@ -361,6 +376,8 @@ header div img {
         margin-right: 3.5rem;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
+        /*Kilde 12, beskrivelse i eksamensdokumentet*/
+        /*Kilde 18, beskrivelse i eksamensdokumentet*/
     }
     #frame article h1 {
         font-size: 5vw;
@@ -482,7 +499,7 @@ footer div a {
 }
 
 /*SKIP TO TOP - for alle sidene*/
-.btn2 { /*Kilde 13, beskrivelse i eksamensdokumentet*/
+.btn2 { 
     position: fixed;
     right: 0;
     bottom: 0;
@@ -491,6 +508,7 @@ footer div a {
     color: #fff;
     border-radius: 5%;
     padding: 13px 13px;
+    /*Kilde 13, beskrivelse i eksamensdokumentet*/
 }  
 
 
@@ -527,6 +545,8 @@ footer div a {
 .btn:hover {
     background-color: #000;
     color: #e6bd43;
+    /*Kilde 22, beskrivelse i eksamensdokumentet*/
+
 }
 
 
@@ -540,9 +560,6 @@ footer div a {
 .centered h1 {
     font-size: 3.5vw;
 }
-.centered p {
-    font-size: 1.5vw;
-}
 .centered nav {
     padding: 1rem 1rem 1rem 1rem;
 }
@@ -552,6 +569,7 @@ footer div a {
 .btn3:hover {
     background-color: #000;
     color: #e6bd43;
+    /*Kilde 22, beskrivelse i eksamensdokumentet*/
 }
 
 /*HEADER - bilde og video*/
@@ -619,35 +637,44 @@ footer div a {
         .btn4:hover {
             background-color: #000;
             color: #e6bd43;
+            /*Kilde 22, beskrivelse i eksamensdokumentet*/
         }
 
-
-#our-services h2 {
-    font-size: 3vw;
-    margin-top: 4rem;
+#our-services {
+    overflow: hidden;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }
-#our-services div {
-    display: flex;
-    justify-content: space-evenly;
-}
-#our-services article p i {
-    font-size: 3.5vw;
-}
-#our-services p { /*Kilde 24, beskrivelse i eksamensdokumentet */
-    white-space: pre-line;
-}
+    #our-services h2 {
+        font-size: 3vw;
+        margin-top: 4rem;
+    }
+    #our-services article {
+        float: left;
+        margin-left: 90px;
+    }
+    #our-services article p i {
+        font-size: 3.5vw;
+    }
+    #our-services p { 
+        white-space: pre-line;
+        /*Kilde 20, beskrivelse i eksamensdokumentet*/
+        /*Kilde 24, beskrivelse i eksamensdokumentet*/
+    }
 
 
 #sign-up {
     align-items: center;
 }
-#sign-up h2 {
-    font-size: 3vw;
-}
-.submit:hover {
-    background-color: #000;
-    color: #e6bd43;
-}
+    #sign-up h2 {
+        font-size: 3vw;
+    }
+    .submit:hover {
+        background-color: #000;
+        color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
+    }
 
 
 /*PRODUCT*/
@@ -656,8 +683,8 @@ footer div a {
 
 
 .company-name-product {
-    position: relative;
-    background-image: url('business-2846221_1280.jpg');
+    position: relative; 
+    background-image: url('business-2846221_1280.jpg'); 
     background-repeat: no-repeat;
     height: 450px;
     background-size: cover;
@@ -665,14 +692,17 @@ footer div a {
     height: 450px;
     width: 100%;
     opacity: 40%;
+    /*Kilde 6, beskrivelse i eksamensdokumentet*/
+    /*Kilde 12, beskrivelse i eksamensdokumentet*/
 }
     .company-name-product img {
         display: none;
     }
     .heading {
-        position: absolute;
+        position: absolute; 
         top: 33%;
         left: 40%;
+        /*Kilde 12, beskrivelse i eksamensdokumentet*/
     }
     .heading h1 {
         font-size: 4vw;
@@ -695,14 +725,17 @@ footer div a {
     .branding:hover{
         background-color: #000;
         color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
     }
     .design:hover{
         background-color: #000;
         color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
     }
     .development:hover{
         background-color: #000;
         color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
     }
 
 
@@ -791,7 +824,7 @@ footer div a {
 }
     #frame {
         grid-column: 2;
-        margin: 2rem 2rem 2rem 0;
+        margin: 1.5rem 3rem 1.5rem 0;
         padding-top: 1rem;
         padding-left: 3rem;
         padding-right: 5rem;
@@ -817,6 +850,7 @@ footer div a {
     .btn5 a:hover {
         background-color: #000;
         color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
     }
 
 .logos {
@@ -840,6 +874,7 @@ footer div a {
         font-size: 2.5vw;
         grid-column: span 4; /*Kilde 20, beskrivelse i eksamensdokumentet*/
         justify-self: center;
+        
     }
     .message {
         grid-area: 2/2;
@@ -854,10 +889,8 @@ footer div a {
     .btn6:hover {
         background-color: #000;
         color: #e6bd43;
+        /*Kilde 22, beskrivelse i eksamensdokumentet*/
     }
-
-
-
 
 
 /*FOOTER*/
