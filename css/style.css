@@ -54,6 +54,7 @@ footer{
 }
     .flex-container img {
         width: 30%;
+        height: auto;
     }
 
 .meny {
@@ -66,9 +67,6 @@ footer{
     text-decoration: none;
     color: #000;
     margin-bottom: 1rem;
-}
-header div img {
-    width: 100%;
 }
 .btn {
     background-color: #e6bd43;
@@ -159,6 +157,7 @@ header div img {
     #company img {
         align-self: center;
         width: 70%;
+        height: auto;
         margin-top: 2rem;
     }
     #company h3 {
@@ -259,7 +258,8 @@ header div img {
 
 /*PRODUKT - Explore previous jobs*/
 #jobs {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin-left: 3.5rem;
     margin-right: 3.5rem;
 
@@ -316,11 +316,7 @@ header div img {
 .branding-image-section-1 img, .branding-image-section-2 img, .branding-image-section-3 img, .branding-image-section-4 img {
     width: 100%;
     max-width: 692px;
-}
-.branding-image-section-1 p, .branding-image-section-2 p, .branding-image-section-3 p, .branding-image-section-4 p {
-    font-weight: bold;
-    font-size: 4vw;
-    margin-top: 1.5rem;
+    min-width: 200px;
 }
 
 
@@ -330,6 +326,7 @@ header div img {
 .design-image-section-1 img, .design-image-section-2 img, .design-image-section-3 img {
     width: 100%;
     max-width: 692px;
+    min-width: 200px;
 }
 .design-image-section-1 p, .design-image-section-2 p, .design-image-section-3 p {
     font-weight: bold;
@@ -344,6 +341,7 @@ header div img {
 .development-image-section-1 img, .development-image-section-2 img {
     width: 100%;
     max-width: 692px;
+    min-width: 200px;
 }
 .development-image-section-1 p, .development-image-section-2 p{
     font-weight: bold;
@@ -528,6 +526,7 @@ footer div a {
 }
 .logo img {
     width: 70%;
+    height: auto;
     margin-bottom: 1rem;
 }
 .meny {
@@ -604,7 +603,7 @@ footer div a {
 }
     #company img {
     margin: 2rem 0 2rem 2rem;
-    width: 100%;
+    width: auto;
     height: 100%;
     }
 
@@ -738,9 +737,6 @@ footer div a {
 #branding h3, #design h3, #development h3 {
     font-size: 3vw;
     margin-bottom: 1rem;
-}
-#branding p, #design p, #development p {
-    font-size: 1.5vw;
 }
 .flex-image {
     display: flex;
@@ -895,12 +891,16 @@ footer{
 footer img {
     margin-left: 1rem;
     width: 70%;
+    height: auto;
 }
 footer p {
     text-align: center;
 }
+#logo1 {
+    margin-right: 0.5rem;
+}
 #logo1 a {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 }
